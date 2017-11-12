@@ -7,5 +7,9 @@ function printBadges(arr) {
   return arr
 }
 function tailsNeverFails(){
-  Math.random()
+  tails = 0
+  while (Math.random() >=0.5){
+    tails++
+  }
+  return `You got ${tails} tails in a row!`
 }
